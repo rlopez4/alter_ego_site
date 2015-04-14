@@ -7,9 +7,10 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
 gulp.task('styles', function () {
-  return gulp.src('app/styles/main.scss')
+  return gulp.src('app/styles/main.sass')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
+      indentedSyntax: true,
       outputStyle: 'nested', // libsass doesn't support expanded yet
       precision: 10,
       includePaths: ['.'],
