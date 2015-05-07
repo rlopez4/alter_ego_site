@@ -1,0 +1,58 @@
+.nav
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: $zIndex-nav
+
+	&.active
+		background-color: $overlay-black
+		min-height: 100vh
+		height: 100%
+		overflow: scroll
+
+	&.active > &--links
+		visibility: visible
+
+	&.active &--button:before
+		content: "\f2d7"
+
+	&--button
+		font-family: "Ionicons"
+		font-size: $font-l
+		position: fixed
+		z-index: $zIndex-nav--button
+		color: $red
+
+		&:focus
+			color: $red
+
+		&:hover
+			color: lighten($red, 3)
+
+	&--button:before
+		content: "\f394"
+
+	&--links
+		position: absolute
+		top: 0
+		height: 100%
+		width: 100%
+		display: table
+		visibility: hidden
+
+		.row
+			display: table-cell
+			vertical-align: middle
+			padding: 2em
+
+		ul
+			margin: 0
+			padding: 0
+			list-style: none
+			font-size: $font-xl
+
+		li > a
+			color: $red
+
+			&:hover, &:focus
+				color: lighten($red, 3)

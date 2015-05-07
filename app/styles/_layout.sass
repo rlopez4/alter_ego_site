@@ -1,0 +1,22 @@
+.right-img,
+.left-img
+	@media #{$large-up}
+		max-width: 50%
+
+.large-collapse > .columns > :not(img)
+  @media #{$large-up}
+    padding: 0 15px 0 0
+
+.large-collapse > .columns.right > :not(img)
+  @media #{$large-up}
+    padding: 0 0 0 15px
+
+div.wrapper
+	min-height: 100vh
+
+header
+  margin-top: 4em
+
+  h2
+  	text-transform: uppercase
+  	font-family: $montserrat-family

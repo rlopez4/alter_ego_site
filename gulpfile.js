@@ -48,7 +48,6 @@ gulp.task('html', function() {
 
 gulp.task('html-build', ['html', 'styles'], function () {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
-  console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&');
 
   return gulp.src('.tmp/*.html')
     .pipe(assets)
@@ -111,8 +110,7 @@ gulp.task('serve', ['html', 'styles', 'fonts'], function () {
   ]).on('change', reload);
 
   gulp.watch('app/*.html', ['html']);
-
-  gulp.watch('app/styles/**/*.scss', ['styles']);
+  gulp.watch('app/styles/**/*.sass', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });

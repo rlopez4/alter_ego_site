@@ -1,0 +1,44 @@
+.main
+	height: 100vh
+	position: relative
+	overflow: hidden
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+
+	&--cover
+		background-color: rgba($black, 0.75)
+
+	&--content
+		width: 100%
+		position: absolute
+		bottom: 5em
+		left: 1.5em
+
+		h1, h2
+			font-family: $montserrat-family
+			text-transform: uppercase
+			color: $white
+
+	&--title
+		font-size: 4em
+		font-weight: 800
+
+	&--subtitle
+		font-size: 1.75em
+
+	&--hr
+		display: block
+		height: 0.5em
+		width: 4em
+		background-color: $red
+		margin-bottom: 0.5em
+
+
+
+
+.main--bg
+	background-image: url('../images/only_land.jpg')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat

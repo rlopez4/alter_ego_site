@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rodrigo Rodrigo</title>
+    <title>Rodrigo Rodrigo | Photography</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -31,58 +31,48 @@
 
     @@include('./_nav.html')
 
-    <main class="main">
-      <div class="cover main--bg"></div>
-      <div class="cover main--cover" id="main--particles"></div>
-      <div class="main--content" data-sr="ease-in-out enter top wait 0.2s">
-        <div class="row">
-          <div class="small-12 columns">
-            <h1 class="main--title">Rodrigo Rogrigo</h1>
-            <span class="main--hr"></span>
-            <h2 class="main--subtitle">Professional Amateur Photographer</h2>
-          </div>
+    <header class="header">
+      <div class="row">
+        <div class="small-12 columns" data-sr="ease-in-out enter top wait 0.2s">
+          <h2 class="text-center">Photography</h2>
         </div>
+        <hr>
       </div>
-    </main>
+    </header>
 
     <div class="wrapper">
-      <section class="welcome">
-        <div class="row large-collapse">
-          <div class="large-6 columns" data-sr="ease-in-out enter top wait 0.2s">
-            <h3>Welcome</h3>
-            <p>Welcome to my website! My name is Rodrigo Rodrigo and I am a professional amateur photographer. Yes that may sound strange but I promise it's a groing profession. I encourage you to explore the rest of my website. Check out some of my work, find out more about me, or contact me so we can chill/become best friends.</p>
+
+      <section class="photos">
+        <div class="row">
+          <div class="columns" data-sr="ease-in-out enter top wait 0.2s">
+            <p class="photos--blurb">Hey! You made it to my photography page. Thanks. I didn't think you would make it. I mean most people don't take my work seriously so they leave before getting here. I tell them that they just need to give me a chance. Well enough of that. Haha, I'm not a joke. Here's some of my work friend! Check it out!</p>
           </div>
-          <div class="large-6 columns" data-sr="ease-in-out enter top wait 0.2s">
-            <img src="images/light_capturing.jpg">
-          </div>
+        </div>
+        <div class="row">
+          <ul class="photos--orbit" data-orbit >
+            <li>
+              <img src="images/only_land.jpg" />
+              <div class="orbit-caption">
+                A picture of land! I don't remember where I took this. Wait, when was I up this high?
+              </div>
+            </li>
+            <li>
+              <img src="images/only_land.jpg" />
+              <div class="orbit-caption">
+                top kek
+              </div>
+            </li>
+            <li>
+              <img src="images/only_land.jpg" />
+              <div class="orbit-caption">
+                top kek
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section class="wat">
-        <div class="row large-collapse">
-          <div class="large-6 columns right" data-sr="ease-in-out enter top wait 0.2s">
-            <h3>What is Professional Amateur Photography?</h3>
-            <p>Well that's kind of hard to explain. You know how you've always wanted to learn a new skill? There's that phase where you are okay at it but you don't feel like you can compete with the pros. Well stop stressing and make your amateur status a profession! That's what I did with photography. My work appears on movie posters, cassette tape covers, T-shirts and other stuff (all made by amateurs)!</p>
-          </div>
-          <div class="large-6 columns" data-sr="ease-in-out enter top wait 0.2s">
-            <img src="images/only_land.jpg">
-          </div>
-        </div>
-      </section>
-
-      <section class="leave-now">
-        <div class="row large-collapse">
-          <div class="large-6 columns" data-sr="ease-in-out enter top wait 0.2s">
-            <h3>Isn't your work an insult to real professional photographers?</h3>
-            <p>no.</p>
-          </div>
-          <div class="large-6 columns" data-sr="ease-in-out enter top wait 0.2s">
-            <img src="images/only_land.jpg">
-          </div>
-        </div>
-      </section>
     </div>
-
 
     @@include('./_footer.html')
 
