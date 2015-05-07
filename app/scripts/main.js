@@ -1,5 +1,7 @@
 /* jshint devel:true */
 
+'use strict';
+
 var menuIsOpen = false;
 
 var Constants = (function(undefined) {
@@ -21,7 +23,7 @@ var Constants = (function(undefined) {
 		Nav: _items[0],
 		Body: _items[1],
 		NavBtn: _items[2]
-	}
+	};
 })();
 
 function bindNav() {
@@ -38,6 +40,9 @@ function bindNav() {
 };
 
 function startParticles() {
+	if (Constants.Body.classList.length === 0) {
+		return;
+	}
 	particlesJS('main--particles', {
 		particles: {
 			color: '#FF3C3C',
@@ -79,7 +84,7 @@ function startParticles() {
 function bindKeyPresses() {
 
 	$(document).keyup(function(e) {
-		if (e.keyCode == 27) {
+		if (e.keyCode === 27) {
 			if (menuIsOpen) {
 				$('.nav--button').click();
 			}
